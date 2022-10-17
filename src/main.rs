@@ -1,5 +1,6 @@
+#[cfg(test)]
 fn test() -> bool {
-   false
+    true
 }
 
 fn main() {
@@ -8,7 +9,7 @@ fn main() {
 
 #[cfg(test)]
 mod tests {
-    use super::*;
+    use super::test;
 
     #[test]
     fn it_works() {
